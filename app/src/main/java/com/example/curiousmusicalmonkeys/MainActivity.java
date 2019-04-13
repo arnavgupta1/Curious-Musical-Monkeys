@@ -1,5 +1,6 @@
 package com.example.curiousmusicalmonkeys;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -24,6 +25,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         ((Button) v).setText("Clicked");
+    }
+
+    //This will change the screen to a sound change menu
+    public void changeSound(View view){
+        Intent startNewActivity = new Intent(this, changeSoundActivity.class);
+        startActivity(startNewActivity);
     }
 }
 

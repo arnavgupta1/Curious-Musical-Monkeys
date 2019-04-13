@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Curious Musical Monkeys</string>
+    <string name="title_activity_change_sound">changeSoundActivity</string>
 </resources>
