@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     //Make a test button
     private Button testButton,b0,b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13,b14,b15;
     private SoundPool lib;
-    private int NumStreams = 1;
+    private int NumStreams = 1,k;
     private int bs0,bs1,bs2,bs3,bs4,bs5,bs6,bs7,bs8,bs9,bs10,bs11,bs12,bs13,bs14,bs15;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         b13.setOnClickListener(new SondPlay(bs13,lib));
         b14.setOnClickListener(new SondPlay(bs14,lib));
         b15.setOnClickListener(new SondPlay(bs15,lib));
-
+        k = R.raw.a;
 
 
 
@@ -118,7 +118,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
    @Override
     public void onClick(View v) {
-        ((Button) v).setText("Clicked");
+        ((Button) v).setText((k +"?"));
     }
 
     //This will change the screen to a sound change menu
