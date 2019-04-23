@@ -119,6 +119,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
    @Override
     public void onClick(View v) {
         ((Button) v).setText((k +"?"));
+        Intent in = new Intent(this,record.class);
+        startActivity(in);
     }
 
     //This will change the screen to a sound change menu
