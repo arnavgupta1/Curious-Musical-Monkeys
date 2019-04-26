@@ -1,0 +1,1 @@
+26 Apr 2019 4:19:17 GMT: Log 'EclipseCompiler.txt' opened: 26 Apr 2019 4:19:17 GMT with name C:\Users\George Kunt Scheller\Documents\GitHub\Curious-Musical-Monkeys\app\src\main\java\com\example\curiousmusicalmonkeys\EclipseCompiler.txt
