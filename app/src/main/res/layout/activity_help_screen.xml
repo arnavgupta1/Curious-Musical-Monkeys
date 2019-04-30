@@ -10,6 +10,7 @@
         android:id="@+id/backButton"
         android:layout_width="100dp"
         android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="628dp"
         android:background="@drawable/button_rectangle"

@@ -2,5 +2,5 @@
     <string name="app_name">Curious Musical Monkeys</string>
     <string name="title_activity_change_sound">changeSoundActivity</string>
     <string name="version">Version 1.00.00</string>
-    <string name="authors">Authors: Arnav Gupta, George Kent-Scheller, Annamalai Ganesh, Tony Faller</string>
+    <string name="authors">Authors: Arnav Gupta, George Kent-Scheller, Annamalai Ganesh, and Tony Faller</string>
 </resources>
