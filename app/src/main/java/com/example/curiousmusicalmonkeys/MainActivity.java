@@ -27,6 +27,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         ((Button) v).setText("Clicked");
     }
 
+    //This will change the screen to a help menu
+    public void changeHelp(View view){
+        Intent startNewActivity = new Intent(this, helpScreenActivity.class);
+        startActivity(startNewActivity);
+    }
+
     //This will change the screen to a sound change menu
     public void changeSound(View view){
         Intent startNewActivity = new Intent(this, changeSoundActivity.class);
