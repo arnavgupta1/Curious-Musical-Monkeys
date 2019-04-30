@@ -1,25 +1,20 @@
 package com.example.curiousmusicalmonkeys;
 
 import android.content.Intent;
-import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+import android.os.Bundle;
 import android.view.View;
 
-public class changeSoundActivity extends AppCompatActivity {
+public class helpScreenActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_change_sound);
-
+        setContentView(R.layout.activity_help_screen);
     }
 
     public void backToStart(View view){
         Intent startNewActivity = new Intent(this, MainActivity.class);
         startActivity(startNewActivity);
     }
-
 }
