@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/Whiteish"
     tools:context=".helpScreenActivity">
 
     <Button
         android:id="@+id/backButton"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginTop="628dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/scrollView2"
+        android:layout_marginTop="-50dp"
         android:background="@drawable/button_rectangle"
         android:clickable="false"
         android:onClick="backToStart"
         android:text="Back"
-        android:textColor="#ffffff"
+        android:textColor="@color/Whiteish"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -25,35 +25,82 @@
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="395dp"
-        android:layout_height="612dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="8dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/colorBlueDark"
+                android:text="User Guide"
+                android:textSize="32dp" />
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorBlueDark"
+                android:layout_height="wrap_content"
+                android:text="      Curious Musical Monkeys is simplistic and self-explanatory in nature; upon tapping one of the hexagonal buttons, a sound plays. The limited number of buttons in the app streamlines the user experience." />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorBlueDark"
+                android:layout_height="wrap_content"
+                android:text="      Changing the sounds for each button is a simple task. Begin by tapping the Sounds button at the bottom of the main screen. This brings you to a recording screen. Begin recording by tapping the REC button and end recording by tapping the STOP button. You are able to play the recorded sound by pressing the PLAY button below REC, and end the playback by pressing the PAUSE button." />
+
 
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
+                android:textColor="@color/colorBlueDark"
                 android:layout_height="wrap_content"
-                android:text="@string/app_name" />
+                android:text="      To assign the recorded sound to a particular button, enter the button’s ID into the text field above the recording buttons and press the BACK button." />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="275dp"
+                android:layout_height="275dp"
+                app:srcCompat="@drawable/honeycomb_label" />
+
+
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/appName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/version" />
+                android:layout_marginTop="50dp"
+                android:text="@string/appName"
+                android:textSize="10dp" />
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/version"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/authors" />
+                android:text="@string/version"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/authors"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/authors"
+                android:textSize="10dp" />
 
         </LinearLayout>
     </ScrollView>
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>
